@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual Meeting UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class='app'>
+  <main class='c-main'>
+    <aside>
+      <a href='#' class='c-logo' title='Navigate to the homepage.' aria-label='CoolProject&Co'></a>
+      
+      <nav class='c-navigation'>
+        <ul>
+           <li><button aria-label='Team performance.' class='c-navigation__button'><i aria-hidden="true" class="far fa-dot-circle"></i></button></li>
+           <li><button aria-label='Performance review.' class='c-navigation__button'><i aria-hidden="true" class="far fa-clipboard"></i></button></li>
+           <li><button aria-label='Team overview.' class='c-navigation__button'><i aria-hidden="true" class="far fa-eye"></i></button></li>
+           <li><button aria-label='Active friends.' class='c-navigation__button'><i aria-hidden="true" class="fas fa-user-friends"></i></button></li>
+           <li><button aria-label='Yearly statistics.' class='c-navigation__button'><i aria-hidden="true" class="far fa-chart-bar"></i></button></li>
+           <li><button aria-label='Video chat.' class='c-navigation__button c-navigation__button--active'><i aria-hidden="true" class="fas fa-video"></i></button></li>
+        </ul>
+      </nav>
+      <button class='c-profile'></button>
+    </aside>
+    
+    
+    
+    
+    
+    
+    <div class='c-video'>
+      <header>
+        <button class='c-video-back'><i class="fas fa-chevron-left"></i></button>
+        <h1>Overview of new real estate proposals</h1>
+        <span><i aria-hidden="true" class="fas fa-user-friends"></i>Team</span>
+        
+      </header>
+      <div class='c-video-information'>
+        <div class='c-video-invited'>
+          <div class='c-video-invited__attendees'>Invited to call: <span>6</span></div>
+          <div class='c-video-invited__absentees'>Absent people: <span>2</span></div>
+        </div>
+        <button>Add user to the call</button>
+        
+      </div>
+      
+      <div class='c-webcam'>
+        <div class='c-webcam-container'>
+          <div class='c-webcam-organisor'>
+            <img src='https://i.pravatar.cc/50?img=5'>
+            <div>
+              <span>Publisher</span>
+              <p>Kate Smith</p>
+            </div>
+          </div>
+          
+          <div class='c-webcam-inchat'>
+             <img src='https://i.pravatar.cc/80?img=3'>
+             <img src='https://i.pravatar.cc/80?img=5'>
+             <img src='https://i.pravatar.cc/80?img=10'>
+             <img src='https://i.pravatar.cc/80?img=4'>
+          </div>
+          
+          <div class='c-webcam__video-controls'>
+            <ul>
+              <li><button class='c-control'><i class="fas fa-expand-arrows-alt"></i></button></li>
+              <li><button class='c-control'><i class="fas fa-microphone-alt-slash"></i></button></li>
+              <li><button class=' c-control--end-call c-join'><i class="fas fa-phone"></i></button></li>
+              <li><button class='c-control'><i class="fas fa-video"></i></button></li>
+              <li><button class='c-control'><i class="fas fa-cog"></i></button></li>
+            </ul>
+          </div>
+          
+        <div class='c-webcam__video'><video autoplay="true" id="c-stream">
+	
+	</video></div>
+        </div>
+      </div>
+   
+    </div>
+    
+    
+    
+    
+    
+    <div class='c-chat'>
+      
+      <div class='c-chat__window'>
+        <header class='c-chat__info'>
+          <h2>Group Chat</h2>
+          <div>
+            <button class='c-chat__tab c-chat__tab--active'>Messages</button>
+            <button  class='c-chat__tab'>Participants</button>
+          </div>
+        </header>
+        <div class='c-chat__conversation'>
+          <div class='c-user__chat '>
+            <span>You</span>
+            <p>Good evening, is this available?</p>
+          </div>
+          
+          <div class='c-user__chat c-user__chat-other '>
+            <span>Lubalin</span>
+            <p>Yes it is</p>
+          </div>
+          
+           <div class='c-user__chat '>
+            <span>You</span>
+            <p>Please leave me alone - we are sleeping.</p>
+          </div>
+          
+           <div class='c-user__chat c-user__chat-other '>
+            <span>Lubalin</span>
+            <p>?</p>
+          </div>
+          
+           <div class='c-user__chat '>
+            <span>You</span>
+            <p>No more contact please. Thanks appreciate.</p>
+          </div>
+          
+          <div class='c-user__chat c-user__chat-other '>
+            <span>Lubalin</span>
+            <p>You contacted me</p>
+          </div>
+          
+           <div class='c-user__chat '>
+            <span>You</span>
+            <p>I know - i no longer interested. Please stop contact me now. I will contact attorney general if you do not stop. Thsnks</p>
+          </div>
+        </div>
+        <div class='c-chat__inputs'>
+          <input type='text' placeholder='Write your message...'>
+          <button class='c-chat__inputs-send' aria-label='Send message'><i aria-hidden='true' class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
